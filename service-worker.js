@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/parse-demo/precache-manifest.848d289658fa24c8573741cace8af12f.js"
+  "mydeo91.github.io/parse-demo/precache-manifest.92e56a5e8225302c8e8b39432cc02dfe.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/parse-demo/index.html", {
+workbox.routing.registerNavigationRoute("mydeo91.github.io/parse-demo/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
