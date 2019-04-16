@@ -1,13 +1,13 @@
 {
-  "main.css": "mydeo91.github.io/parse-demo/static/css/main.9a17f1f5.chunk.css",
-  "main.js": "mydeo91.github.io/parse-demo/static/js/main.9db9c76a.chunk.js",
-  "main.js.map": "mydeo91.github.io/parse-demo/static/js/main.9db9c76a.chunk.js.map",
-  "runtime~main.js": "mydeo91.github.io/parse-demo/static/js/runtime~main.0486185b.js",
-  "runtime~main.js.map": "mydeo91.github.io/parse-demo/static/js/runtime~main.0486185b.js.map",
-  "static/js/2.452e1260.chunk.js": "mydeo91.github.io/parse-demo/static/js/2.452e1260.chunk.js",
-  "static/js/2.452e1260.chunk.js.map": "mydeo91.github.io/parse-demo/static/js/2.452e1260.chunk.js.map",
-  "index.html": "mydeo91.github.io/parse-demo/index.html",
-  "precache-manifest.92e56a5e8225302c8e8b39432cc02dfe.js": "mydeo91.github.io/parse-demo/precache-manifest.92e56a5e8225302c8e8b39432cc02dfe.js",
-  "service-worker.js": "mydeo91.github.io/parse-demo/service-worker.js",
-  "static/css/main.9a17f1f5.chunk.css.map": "mydeo91.github.io/parse-demo/static/css/main.9a17f1f5.chunk.css.map"
+  "main.css": "/parse-demo/static/css/main.9a17f1f5.chunk.css",
+  "main.js": "/parse-demo/static/js/main.9db9c76a.chunk.js",
+  "main.js.map": "/parse-demo/static/js/main.9db9c76a.chunk.js.map",
+  "runtime~main.js": "/parse-demo/static/js/runtime~main.40078b0c.js",
+  "runtime~main.js.map": "/parse-demo/static/js/runtime~main.40078b0c.js.map",
+  "static/js/2.452e1260.chunk.js": "/parse-demo/static/js/2.452e1260.chunk.js",
+  "static/js/2.452e1260.chunk.js.map": "/parse-demo/static/js/2.452e1260.chunk.js.map",
+  "index.html": "/parse-demo/index.html",
+  "precache-manifest.a86acb59588957c4a0af967e00fa7eee.js": "/parse-demo/precache-manifest.a86acb59588957c4a0af967e00fa7eee.js",
+  "service-worker.js": "/parse-demo/service-worker.js",
+  "static/css/main.9a17f1f5.chunk.css.map": "/parse-demo/static/css/main.9a17f1f5.chunk.css.map"
 }
