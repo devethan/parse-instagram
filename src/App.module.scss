@@ -5,6 +5,7 @@ $dark-gray: #999;
 $border-color: #e6e6e6;
 $light-gray: #efefef;
 @import url("https://fonts.googleapis.com/css?family=Roboto:300:400,500,600");
+@import "_mixin.scss";
 body {
   background-color: $bg-color;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -15,12 +16,12 @@ body {
 //   box-sizing: border-box;
 // }
 
-body, html {
+body,
+html {
   margin: 0;
   background-color: #fafafa;
 }
 .appRoot {
-  
   .app {
     display: flex;
     justify-content: center;
@@ -28,6 +29,12 @@ body, html {
     flex-direction: column;
     max-width: 768px;
     margin: 60px auto;
+    @include breakpoint("tablet") {
+      margin: 0 auto;
+    }
+    @include breakpoint("phone") {
+      margin: 0 auto;
+    }
     .userInfo {
       max-width: 620px;
       width: 100%;
@@ -35,11 +42,23 @@ body, html {
       background-color: white;
       display: flex;
       align-items: center;
+      @include breakpoint("tablet") {
+        border: none;
+        background-color: transparent;
+      }
+      @include breakpoint("phone") {
+        display: none;
+      }
       .column {
         .profileImage {
           border-radius: 50%;
           width: 150px;
           height: 150px;
+          @include breakpoint("tablet") {
+            width: 100px;
+            height: 100px;
+            margin-left: 10%;
+          }
         }
         &:first-child {
           padding: 15px 30px;
@@ -61,7 +80,6 @@ body, html {
           }
         }
         .bio {
-
         }
       }
     }
@@ -77,12 +95,25 @@ body, html {
           height: 300px;
           position: relative;
           padding: 5px 5px;
-          // display: flex;
-          // justify-content: center;
-          // align-items: center;
+          @include breakpoint("tablet") {
+            width: 100%;
+            height: 100%;
+          }
+          @include breakpoint("phone") {
+            width: 100%;
+            height: 100%;
+          }
           .image {
             width: 300px;
             height: 300px;
+            @include breakpoint("tablet") {
+              width: 100%;
+              height: 100%;
+            }
+            @include breakpoint("phone") {
+              width: 100%;
+              height: 100%;
+            }
           }
           .box {
             position: absolute;
@@ -100,6 +131,12 @@ body, html {
             font-weight: 600;
             font-size: 15px;
             padding: 5px;
+            @include breakpoint("tablet") {
+              width: 50%;
+            }
+            @include breakpoint("phone") {
+              width: 50%;
+            }
           }
         }
       }

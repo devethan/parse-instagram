@@ -82,10 +82,13 @@ const Content = ({ data : { selfData, postData }}) => {
 };
 
 const Post = props => {
-  const {images:{standard_resolution:{url}}, id, caption} = props;
+  const {images:{standard_resolution:{url}}, id, caption, link} = props;
+  const handleClick = (link) => {
+    window.open(link);
+  }
   return (
     <div className={styles.content}>
-      <img src={url} alt={id} className={styles.image}/>
+      <img src={url} alt={id} className={styles.image} onClick={()=>handleClick(link)}/>
       {caption &&
         <div className={styles.box}>
           <span className={styles.text}>{caption.text}</span>

@@ -1,0 +1,18 @@
+$tablet-width: 635px;
+$desktop-width: 875px;
+$xl-desktop-width: 1351px;
+$phone-width: 320px;
+$iphone6-width: 375px;
+$iphone6plus-width: 450px;
+
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == "tablet" {
+    @media (min-width: 420px) and (max-width: 635px) {
+      @content;
+    }
+  } @else if $breakpoint == "phone" {
+    @media (min-width: 0) and (max-width: 420px) {
+      @content;
+    }
+  }
+}
