@@ -1,0 +1,108 @@
+$bg-color: #fafafa;
+$dark-blue: #003569;
+$light-blue: #3897f0;
+$dark-gray: #999;
+$border-color: #e6e6e6;
+$light-gray: #efefef;
+@import url("https://fonts.googleapis.com/css?family=Roboto:300:400,500,600");
+body {
+  background-color: $bg-color;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+// * {
+//   box-sizing: border-box;
+// }
+
+body, html {
+  margin: 0;
+  background-color: #fafafa;
+}
+.appRoot {
+  
+  .app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 768px;
+    margin: 60px auto;
+    .userInfo {
+      max-width: 620px;
+      width: 100%;
+      border: 1px solid $light-gray;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      .column {
+        .profileImage {
+          border-radius: 50%;
+          width: 150px;
+          height: 150px;
+        }
+        &:first-child {
+          padding: 15px 30px;
+          width: 30%;
+        }
+        .name {
+          span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 7px;
+            text-transform: uppercase;
+            width: 250px;
+            &:first-child {
+              background-color: $light-blue;
+              color: white;
+              height: 25px;
+            }
+          }
+        }
+        .bio {
+
+        }
+      }
+    }
+    .items {
+      max-width: 620px;
+      .item {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: center;
+        // flex-direction: column;
+        .content {
+          width: 300px;
+          height: 300px;
+          position: relative;
+          padding: 5px 5px;
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
+          .image {
+            width: 300px;
+            height: 300px;
+          }
+          .box {
+            position: absolute;
+            background-color: $dark-blue;
+            opacity: 0.5;
+            width: 290px;
+            min-height: 30px;
+            text-overflow: ellipsis;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 5px;
+            top: 5px;
+            color: white;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+}
